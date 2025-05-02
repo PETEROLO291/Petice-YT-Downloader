@@ -5,6 +5,7 @@ Petice Downloader: Lightning-Fast YouTube Playlist & Video Downloader
 Effortlessly download entire YouTube playlists or individual videos in MP4 (video) or MP3 (audio) with unmatched speed and precision! Our intuitive GUI lets you queue multiple playlists, manage concurrent downloads, and track progress in real time—all while enjoying seamless format conversion and automatic folder organization.
 
 ✨ Key Features:
+
 ✅ Blazing-Fast Parallel Downloads: Handle up to 10 simultaneous downloads (adjustable!) to slash wait times.
 
 ✅ Smart Queue System: Add, remove, or clear playlists with ease—prioritize your downloads effortlessly.
