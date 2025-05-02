@@ -214,7 +214,8 @@ def download_process(queue, playlist_info, format_choice, cancel_event, base_fol
                     success = True
                     if attempt > 1:
                         queue.put(("-STATUS-", f"Successfully downloaded '{video_title}'"))
-                        time.sleep(1.5)
+                        time.sleep(3)
+                        queue.put(("-STATUS-", "Processing downloads"))
                     break
                 except Exception as e:
                     if attempt == 3:
@@ -326,7 +327,8 @@ def download_process_concurrent(queue, playlist_info, format_choice, cancel_even
                     success = True
                     if attempt > 1:
                         queue.put(("-STATUS-", f"Successfully downloaded '{video_title}'"))
-                        time.sleep(1.5)
+                        time.sleep(3)
+                        queue.put(("-STATUS-", "Processing downloads"))
                     break
                 except Exception as e:
                     queue.put(("-STATUS-", f"Retrying download of '{video_title}' ({attempt}/3)"))
